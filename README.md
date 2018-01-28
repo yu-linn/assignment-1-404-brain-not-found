@@ -10,7 +10,8 @@ Run using `node main.js`
 
 **Project Proposal:**
 
-Our website will allow the user to efficiently analyze news headlines of their desired topics and view sentiment information about the whether the news is overall positive or negative. The user will be able to subscribe to multiple topics to track their sentiment and perception in the media. The website will also provide links leading to the full article if the user wishes to read it. In addition, We accomplish this using two APIs: News API and IBM Watson API. Using the News API, we will collect headlines and brief information about the specific topic from various news sources. Using IBM Watson API for natural language understanding, we plan on using the sentiment analysis feature to analyze the news headlines and descriptions about the topics.
+Our website will allow the user to efficiently analyze news headlines of their desired topics and view sentiment information about the whether the news is overall positive or negative. The user will be able to subscribe to multiple topics to track their sentiment and perception from different news sources. The website will also provide links leading to the full article if the user wishes to read it. In addition, We accomplish this using two APIs: News API and IBM Watson API. Using the News API, we will collect headlines and brief information about the specific topic from various news sources. Using IBM Watson API for natural language understanding, we plan on using the sentiment analysis feature to analyze the news headlines and descriptions about the topics.
+
 
 **APIs to use**
 - https://newsapi.org/
