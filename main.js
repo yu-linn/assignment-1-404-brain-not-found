@@ -15,7 +15,6 @@ function getCollection(callback) {
 
 		if(response.statusCode === 200){
 			let fullData = JSON.parse(body);
-			console.log(fullData)
 			callback(fullData.articles)
 		}
 
