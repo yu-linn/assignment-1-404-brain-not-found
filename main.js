@@ -24,7 +24,19 @@ function getCollection(callback) {
 }
 
 function getSortedCollection(callback) {
-  // implement
+  let  query = "https://newsapi.org/v2/everything?language=en&q=dance&apiKey=0c892f7ce2ee4fd09aef39ff92f65b77"
+
+	request.get(query, function(error, response, body){
+		if(error){
+			return error
+		}
+
+		if(response.statusCode === 200){
+			let fullData = JSON.parse(body);
+			callback(fullData.articles)
+		}
+
+	});
 }
 
 // use the following to test your functions
@@ -34,5 +46,7 @@ getCollection(function(array){
 })
 
 getSortedCollection(function(array) {
-  console.log("Collection sorted ",array)
+  console.log("Collection sorted ", array.sort(function(a, b) {
+    return a.description.localeCompare(b.description);
+}))
 })
