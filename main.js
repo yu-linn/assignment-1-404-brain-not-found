@@ -33,10 +33,15 @@ function getSortedCollection(callback) {
 
 		if(response.statusCode === 200){
 			let fullData = JSON.parse(body);
+			fullData.articles.sort(function(a, b) {
+    			return a.description.localeCompare(b.description);
+			})
 			callback(fullData.articles)
 		}
 
+
 	});
+
 }
 
 // use the following to test your functions
@@ -46,7 +51,5 @@ getCollection(function(array){
 })
 
 getSortedCollection(function(array) {
-  console.log("Collection sorted ", array.sort(function(a, b) {
-    return a.description.localeCompare(b.description);
-}))
+  console.log("Collection sorted ", array)
 })
