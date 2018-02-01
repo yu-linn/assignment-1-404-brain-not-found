@@ -6,7 +6,7 @@ function getCollection(callback) {
 
 	//NEWS API
 	//Gets the JSON collection of top Canada headlines
-	let  query = "https://newsapi.org/v2/top-headlines?country=ca&apiKey=0c892f7ce2ee4fd09aef39ff92f65b77"
+	let  query = "https://newsapi.org/v2/everything?language=en&q=trump&apiKey=0c892f7ce2ee4fd09aef39ff92f65b77"
 
 	request.get(query, function(error, response, body){
 		if(error){
