@@ -10,6 +10,7 @@ Run using `node main.js`
 
 **Team Members:**
 - **Name:** Yushan Lin **Student #:** 1001713336
+- **Name:** Ambarish Gugilla **Student #:** 1001344609
 
 **Project Proposal:**
 
